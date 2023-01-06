@@ -1,4 +1,4 @@
-// import { createSlice } from "@reduxjs/toolkit";
+import { createSlice } from "@reduxjs/toolkit";
 
 const initialState = [
     {
@@ -11,9 +11,9 @@ const initialState = [
     {
         id:1,
         title:"Quizzical Trivia",
-        liveLink:"",
+        liveLink:"https://tagopig.github.io/quizzical-trivia/",
         githubLink:"https://github.com/tagopig/quizzical-trivia",
-        picture:""
+        picture:"imgs/quizzical-trivia.png"
     },
     {
         id:2,
@@ -23,3 +23,26 @@ const initialState = [
         picture:""
     },
 ]
+
+const projectSlice = createSlice({
+    name:"projectSlice",
+    initialState,
+})
+
+export default projectSlice.reducer;
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
