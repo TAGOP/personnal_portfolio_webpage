@@ -4,9 +4,9 @@ const initialState = [
     {
         id:0,
         title:"FlagoMeme",
-        liveLink:"",
+        liveLink:"https://tagopig.github.io/FlagoMeme/",
         githubLink:"https://github.com/tagopig/FlagoMeme",
-        picture:""
+        picture:"imgs/FlagoMeme.png"
     },
     {
         id:1,
