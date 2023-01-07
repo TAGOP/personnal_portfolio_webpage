@@ -3,7 +3,7 @@ import { useSelector } from "react-redux"
 
 export default function Projects(){
     const projects = useSelector(store=> store.projects)
-    const projectsElements = projects.map(project =>{ return <Project key={project.id} projectData={{...project}}/>})
+    let projectsElements = [...projects].reverse().map(project =>{ return <Project key={project.id} projectData={{...project}}/>})
     return(
         <section id="projects">
         <div id="h2poo"><h2>These are some of my projects</h2></div>
