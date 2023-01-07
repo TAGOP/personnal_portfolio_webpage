@@ -97,7 +97,7 @@ hr {
 #act-projects {
   display: grid;
   width: auto;
-  grid-template-rows: 410px 410px;
+  grid-template-rows: repeat(3, 410px);
   grid-template-columns: minmax(320px, 30%) minmax(320px, 30%) minmax(320px, 30%);
   -o-object-fit: cover;
      object-fit: cover;
@@ -112,6 +112,11 @@ hr {
   width: 100%;
   margin: 0;
   justify-content: center;
+  background-image: url("../../public/imgs/free-trial.png");
+  background-size: cover;
+  background-position: top;
+  position: relative;
+  z-index: 2;
 }
 
 .shit {
@@ -121,17 +126,9 @@ hr {
   height: calc(100% - 65px);
   width: 100%;
   margin: 0;
-}
-
-#poop {
-  display: flex;
-  justify-content: center;
-  margin-block: 70px;
-}
-
-#projects > h2 {
-  margin-top: 0;
-  padding-top: 100px;
+  display: none;
+  position: relative;
+  z-index: 1;
 }
 
 #act-projects p {
@@ -144,6 +141,21 @@ hr {
   font-size: 20px;
   padding-top: 20px;
   text-align: center;
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+}
+
+#poop {
+  display: flex;
+  justify-content: center;
+  margin-block: 70px;
+}
+
+#projects > h2 {
+  margin-top: 0;
+  padding-top: 100px;
 }
 
 button {
@@ -286,13 +298,13 @@ a:visited {
 @media (max-width: 1090px) {
   #act-projects {
     grid-template-columns: minmax(320px, 45%) minmax(320px, 45%);
-    grid-template-rows: 410px 410px;
+    grid-template-rows: repeat(5, 410px);
   }
 }
 @media (max-width: 730px) {
   #act-projects {
     grid-template-columns: minmax(320px, 90%);
-    grid-template-rows: 410px 410px;
+    grid-template-rows: repeat(10, 410px);
   }
 }
 #h2poo {
