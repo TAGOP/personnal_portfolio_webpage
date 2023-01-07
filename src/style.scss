@@ -90,11 +90,10 @@ hr{
     grid-template-rows:410px 410px;
     grid-template-columns:minmax(320px,30%) minmax(320px,30%) minmax(320px,30%);
     object-fit: cover;
-    row-gap:90px;
+    gap:30px;
     margin: auto;
     flex-wrap: wrap;
     justify-content: center;
-    column-gap: 30px;
 }
 #act-projects a{
     height:100%;
@@ -103,15 +102,16 @@ hr{
     justify-content: center;
 }
 .shit{
+    display: inline-block;
     object-fit: cover;
-    height: 100%;
+    height: calc(100% - 65px);
     width:100%;
     margin: 0;
 }
 #poop{
     display: flex;
     justify-content: center;
-    margin-top: 70px;
+    margin-block: 70px;
 }
 #projects>h2{
     margin-top: 0;
@@ -247,11 +247,15 @@ a:visited{
 @media (max-width:1090px){
     #act-projects{
         grid-template-columns:minmax(320px,45%) minmax(320px,45%) ;
+        grid-template-rows:410px 410px;
+
     }
 }
 @media (max-width:730px){
     #act-projects{
         grid-template-columns: minmax(320px,90%) ;
+        grid-template-rows:410px 410px;
+
     }
 }
 #h2poo{
