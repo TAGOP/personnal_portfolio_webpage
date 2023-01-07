@@ -15,10 +15,6 @@ export default function Footer (){
                 <a rel="noreferrer" href="d" target="_blank" ><i className="fa-solid fa-mobile-screen-button"></i>Call me</a>
             </nav>
             </div>
-            <div id="LBNL">
-                <p id="susi">**This is just a fake portfolio. All the projects and contact details given are not real.</p>
-                <p id="baka">© Created for  <a target="_blank" href="https://www.freecodecamp.org/" rel="noreferrer">freeCodeCamp <i className="fa-brands fa-free-code-camp"></i></a></p>
-            </div>
         </footer>
     )
 }
