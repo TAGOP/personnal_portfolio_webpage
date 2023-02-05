@@ -107,7 +107,7 @@ hr {
 #act-projects {
   display: grid;
   width: auto;
-  grid-template-rows: repeat(3, 410px);
+  grid-template-rows: repeat(4, 410px);
   grid-template-columns: minmax(320px, 30%) minmax(320px, 30%) minmax(320px, 30%);
   -o-object-fit: cover;
      object-fit: cover;
@@ -117,7 +117,7 @@ hr {
   justify-content: center;
 }
 
-#act-projects a {
+#act-projects > a {
   height: 100%;
   width: 100%;
   margin: 0;
@@ -330,5 +330,101 @@ a:visited {
 @media (max-width: 630px) {
   #navbar {
     justify-content: space-evenly;
+  }
+}
+.abc {
+  overflow: hidden;
+  border-radius: 5px;
+}
+
+#github-link {
+  display: flex;
+  flex-direction: column;
+  position: relative;
+  align-items: center;
+  justify-content: center;
+  background-color: #161B22;
+  gap: 3px;
+  padding-block: 20px;
+  font-family: "Poppins", sans-serif;
+  bottom: 76px;
+  font-weight: bold;
+  font-size: 19px;
+  letter-spacing: 1.5px;
+  transition-duration: 250ms;
+}
+@media (max-width: 1023px) {
+  #github-link {
+    font-size: 0;
+    background-color: transparent;
+    padding: 0;
+    position: absolute;
+    inset: 1px 0 auto auto;
+  }
+}
+#github-link i {
+  font-size: 28px;
+  margin-right: 10px;
+  background-color: #161B22;
+}
+@media (max-width: 1023px) {
+  #github-link i {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 29px;
+    height: 50px;
+    width: 50px;
+    border-radius: 5px;
+    margin: 0 0 0 calc(100% - 52px);
+    border: solid 1px white;
+  }
+}
+#github-link hr {
+  margin: 0;
+  width: 0;
+  border: none;
+  height: 1px;
+  background-color: white;
+  transition-duration: 200ms;
+}
+@media (max-width: 1023px) {
+  #github-link hr {
+    display: none;
+  }
+}
+
+.abc:hover #github-link {
+  bottom: 0;
+}
+@media (max-width: 1023px) {
+  .abc:hover #github-link {
+    bottom: auto;
+  }
+}
+
+#github-link:hover hr {
+  display: block;
+  width: 115px;
+}
+@media (max-width: 1023px) {
+  #github-link:hover hr {
+    display: none;
+  }
+}
+@media (max-width: 1023px) {
+  #github-link:hover i {
+    font-size: 31px;
+  }
+}
+@media (max-width: 1023px) {
+  #github-link:hover hr {
+    display: none;
+  }
+  #github-link:hover i {
+    color: #161B22;
+    background: white;
+    border-color: #161B22;
+    transition-duration: 250ms;
   }
 }/*# sourceMappingURL=style.css.map */
