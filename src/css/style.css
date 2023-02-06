@@ -15,6 +15,7 @@ body {
   width: 100px;
   margin: 0;
   position: relative;
+  transition-duration: 450ms;
 }
 
 .link-header {
